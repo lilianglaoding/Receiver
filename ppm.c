@@ -3,7 +3,7 @@
 #include "pwm.h"
 
 
-#define PPM_PIN                22
+#define PPM_PIN                13
 
 extern uint16_t volatile pwmValues[CH_NUM * 2];
 uint16_t volatile ppmValues[PPM_NUM] = { MS05, 500, MS05, 1000, MS05, 1000, MS05, 1000, MS05, 1000, MS05, 1000, MS05, 1000, MS05, 1000, MS05, 8000 };

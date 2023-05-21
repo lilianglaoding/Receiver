@@ -394,19 +394,19 @@ void StartSendPacket() {
                     Radio.SetRx( ( TickTime_t ) { RX_TIMEOUT_TICK_SIZE, RX_TIMEOUT_VALUE } );
                     continue;
                 }
-                /*
+                
                 for (uint8_t i = 0; i < CH_NUM; i++) {
                     
                     pwmValues[i] = ((uint16_t)Buffer[startIndex] << 8) | ((uint16_t)Buffer[startIndex + 1]);
                     startIndex = startIndex + 2;
                 }
 
+                /*
                 for (int i = 0; i < CH_NUM * 2; i++) {
                     printf("%d ", pwmValues[i]);
                 }
                 printf("\n");
-                */
-                /*
+                
                 printf("packetNum: %d\n", (uint16_t)Buffer[(startIndex + CH_NUM * 2 - 4) % (PACKET_LENGTH * 2)] << 8 | (uint16_t)Buffer[(startIndex + CH_NUM * 2 - 3) % (PACKET_LENGTH * 2)]);
                 
                 if (((uint16_t)Buffer[(startIndex + CH_NUM * 2 - 4) % (PACKET_LENGTH * 2)] << 8 | (uint16_t)Buffer[(startIndex + CH_NUM * 2 - 3) % (PACKET_LENGTH * 2)]) % 1024 != 0) {
